@@ -7,13 +7,13 @@ package EjemplosdeCodigo;
  es una variable estática que lleva la cuenta del número total de cuentas bancarias 
  creadas en la aplicación.
 
-En el constructor de la clase, cada vez que se crea una nueva instancia de CuentaBancaria, 
+En el constructor de la clase, cada vez que se crea una nueva instancia de EjemploVariableStatic, 
 se incrementa el valor de la variable estática numeroDeCuentas. Esto permite conocer en 
 cualquier momento el número total de cuentas bancarias creadas.
 
 El método obtenerNumeroDeCuentas() es un método estático que devuelve el valor actual de 
 la variable estática numeroDeCuentas. Este método puede ser invocado sin la necesidad de 
-crear una instancia de la clase CuentaBancaria.
+crear una instancia de la clase EjemplovariableStatic.
 
 El resto de los métodos (depositar(), retirar() y obtenerSaldo()) son métodos de instancia 
 que operan sobre la variable de instancia saldo.
@@ -25,12 +25,12 @@ mantener información específica de cada objeto de la clase.
 */
 
 
-public class EjemploVariableStatic {
+public class VariableStatic {
 	
 	    private static int numeroDeCuentas = 0;
 	    private double saldo;
 
-	    public EjemploVariableStatic(double saldoInicial) {
+	    public VariableStatic(double saldoInicial) {
 	        this.saldo = saldoInicial;
 	        numeroDeCuentas++;
 	    }

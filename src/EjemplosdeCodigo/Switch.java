@@ -19,7 +19,7 @@ estructura switch es muy útil para simplificar la lógica de programación en c
 necesitan tomar decisiones complejas en función de varias condiciones.
 
 */
-public class EjemploSwitch {
+public class Switch {
 
 	public static void main(String[] args) {
 		String paisOrigen = "México";

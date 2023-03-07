@@ -1,6 +1,6 @@
 package EjemplosdeCodigo;
 
-public class EjemploTiposDeIf {
+public class TiposDeIf {
 
 	public static void main(String[] args) {
 		
