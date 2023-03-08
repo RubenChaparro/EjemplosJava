@@ -1,4 +1,4 @@
-package EjemplosdeCodigo;
+package ejemplosdeCodigo;
 
 public class TiposDeIf {
 

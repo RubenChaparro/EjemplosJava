@@ -1,4 +1,4 @@
-package EjemplosdeCodigo;
+package ejemplosClase;
 
 /* 
  En este ejemplo, la variable saldo es una variable de instancia (no estática) 
@@ -24,34 +24,33 @@ mantener información específica de cada objeto de la clase.
 
 */
 
-
 public class VariableStatic {
-	
-	    private static int numeroDeCuentas = 0;
-	    private double saldo;
 
-	    public VariableStatic(double saldoInicial) {
-	        this.saldo = saldoInicial;
-	        numeroDeCuentas++;
-	    }
+	private static int numeroDeCuentas = 0;
+	private double saldo;
 
-	    public void depositar(double cantidad) {
-	        saldo += cantidad;
-	    }
-
-	    public void retirar(double cantidad) {
-	        if (cantidad > saldo) {
-	            System.out.println("Error: Saldo insuficiente.");
-	        } else {
-	            saldo -= cantidad;
-	        }
-	    }
-
-	    public double obtenerSaldo() {
-	        return saldo;
-	    }
-
-	    public static int obtenerNumeroDeCuentas() {
-	        return numeroDeCuentas;
-	    }
+	public VariableStatic(double saldoInicial) {
+		this.saldo = saldoInicial;
+		numeroDeCuentas++;
 	}
+
+	public void depositar(double cantidad) {
+		saldo += cantidad;
+	}
+
+	public void retirar(double cantidad) {
+		if (cantidad > saldo) {
+			System.out.println("Error: Saldo insuficiente.");
+		} else {
+			saldo -= cantidad;
+		}
+	}
+
+	public double obtenerSaldo() {
+		return saldo;
+	}
+
+	public static int obtenerNumeroDeCuentas() {
+		return numeroDeCuentas;
+	}
+}
